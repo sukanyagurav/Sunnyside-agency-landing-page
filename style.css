@@ -1,0 +1,254 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    
+--light-red: hsl(7, 99%, 70%);
+--yellow: hsl(51, 100%, 49%);
+--cyan: hsl(167, 40%, 24%);
+--blue: hsl(198, 62%, 26%);
+--dark-cyan: hsl(168, 34%, 41%);
+--dark-blue: hsl(212, 27%, 19%);
+--grayish-blue: hsl(213, 9%, 39%);
+--Dark-grayish-blue: hsl(232, 10%, 55%);
+--gayish-blue-2: hsl(210, 4%, 67%);
+--white: hsl(0, 0%, 100%);
+
+}
+body{
+    max-width: 1440px;
+    margin-inline: auto;
+    font-family: Barlow, sans-serif;
+    font-weight: 600;
+    color:var(--grayish-blue);
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    background-image: url('images/mobile/image-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:1rem;
+    height: 90vh;
+    background-color: var(--cyan);
+}
+img{
+    object-fit: contain;
+    display: block;
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.about{
+   display: grid;
+   grid-template-columns: 1fr;
+}
+main{
+    text-align: center;
+}
+.about .about-img img,
+.feature img{
+    inline-size: 100%;
+}
+.feature{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.about-text{
+    padding: 2rem;
+    max-width: 455px;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+.about-text h2{
+    font-family: Fraunces, sans-serif;
+    font-weight: 900;
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    color:var(--dark-blue);
+    line-height: 1.4;
+}
+.about-text a{
+    font-family: Fraunces, sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    margin-top: 2rem;
+    display: inline-block;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+}
+.about-3,
+.about-4{
+    background-repeat: no-repeat;
+    background-position: 100% 40%;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 2rem; 
+
+    height: 36rem;
+    resize: both;
+}
+.about-3{
+    background-image: url('images/mobile/image-graphic-design.jpg');
+}
+.about-4{
+    background-image: url('images/mobile/image-photography.jpg');
+    color:var(--dark-blue);
+}
+.about-3 .about-text,
+.about-4 .about-text{
+    align-self: flex-end;
+    max-width: 400px;
+    line-height: initial;
+}
+.about-3 h3,.about-4 h3{
+    font-family: Fraunces, sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+}
+.about-3 h3{
+    color: var(--cyan);
+}
+.about-4{
+    color:var(--blue);
+}
+.about-3 p{
+    color: var(--dark-cyan);
+}
+.services{
+    padding:3rem 2rem;
+  text-align: center;
+
+}
+.services h3{
+    text-transform: uppercase;
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 2.5px;
+    font-size: 1.2rem;
+    font-family: Fraunces, sans-serif;
+    font-weight: 600;
+}
+.testimonials-container{
+    margin: 3rem;
+    max-width: 1000px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:2rem;
+}
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3rem;
+  
+}
+.testimonial img{
+    border-radius: 50%;
+    height: 70px;
+    height: 70px;
+}
+.testimonial p{
+    line-height: 1.6;
+}
+.testimonial-user h5{
+    font-weight: 900;
+    font-family: Fraunces, sans-serif;
+    color:var(--dark-blue);
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+}
+.testimonial-user span{
+    color:var(--gayish-blue-2);
+    font-size: 0.94rem;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.projects img{
+    /* width: 300px; */
+    max-width: 800px;
+    width: 100%;
+}
+footer{
+    padding:3rem 1.4rem;
+    background-color: rgb(142,208,196);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    color: var(--dark-cyan);
+}
+footer a{
+    font-weight: 600;
+}
+footer .logo{
+    filter:  invert(45%) sepia(22%) saturate(790%) hue-rotate(118deg) brightness(95%) contrast(92%);
+}
+.social-nav,
+.footer-nav
+{
+    display: flex;
+    gap:1.5rem;
+}
+@media (min-width:800px){
+    header{
+        background-image: url('images/desktop/image-header.jpg');
+    }
+    .about{
+        grid-template-columns: 1fr 1fr;
+     }
+     
+    main{
+        text-align: left;
+    }
+    .about-1 .about-text{
+        order:1;
+    }
+    .about-1 .about-img{
+        order:2;
+    }
+  .feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+ .about-3,.about-4{
+    height: 500px;
+    background-position: center;
+ }
+  .about-3{
+    background-image: url('images/desktop/image-graphic-design.jpg');
+  }
+  .about-4{
+    background-image: url('images/desktop/image-photography.jpg');
+    }
+    .testimonials-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .testimonial
+    {   max-width: 300px;
+        height: 370px;
+    }
+    .projects{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
