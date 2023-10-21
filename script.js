@@ -25,8 +25,7 @@ const sr = ScrollReveal({
     origin:'top',
     distance:'50px',
     duration:1300,
-    delay:100,
-    reset:true
+    delay:100
 })
 sr.reveal(`.banner`)
 sr.reveal(`.about-text`)

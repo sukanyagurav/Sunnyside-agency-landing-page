@@ -293,9 +293,9 @@ header{
     letter-spacing: 2.5px;
     font-size: 1.2rem;
     font-weight: 600;
+    margin-bottom: 5rem;
 }
 .testimonials-container{
-    margin: 3rem;
     max-width: 1000px;
     margin-inline: auto;
     display: grid;
@@ -401,8 +401,12 @@ footer a:hover{
     .about-4{
         background-image: url('images/desktop/image-photography.jpg');
     }
+    .services{
+        margin: 9rem 0 4rem;
+    }
     .testimonials-container{
         grid-template-columns: repeat(3,1fr);
+
     }
     .testimonial
     {   max-width: 300px;
