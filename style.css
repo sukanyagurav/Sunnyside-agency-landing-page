@@ -112,11 +112,8 @@ header{
 }
 .menu-wrap.active ul{
     position: absolute;
- 
     opacity: 1;
     right: 10%;
-
-
     z-index: 20;
     transition: right 0.5s;
 }
@@ -322,10 +319,10 @@ header{
 .testimonial p{
     line-height: 1.6;
 }
-.testimonial-user h5{
+.testimonial-user span:nth-child(1){
     color:var(--dark-blue);
     margin-bottom: 0.5rem;
-    font-size: 1.05rem;
+    display: block;
 }
 .testimonial-user span{
     color:var(--gayish-blue-2);
