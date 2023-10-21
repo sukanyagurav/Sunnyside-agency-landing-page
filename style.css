@@ -340,7 +340,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:2rem;
+    gap:2.5rem;
     color: var(--dark-cyan);
 }
 footer a{
@@ -414,5 +414,8 @@ footer a:hover{
     }
     .projects{
         grid-template-columns: repeat(4,1fr);
+    }
+    footer{
+        padding:4rem;
     }
 }
