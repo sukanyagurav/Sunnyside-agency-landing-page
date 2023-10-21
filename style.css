@@ -66,12 +66,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.menu{
-    display: none;
-}
-.menu-wrap.active .menu{
-    display: block;
-}
+
 .menu-wrap ul{
     position: absolute;
     right: -990px;
@@ -80,7 +75,7 @@ header{
     background-color: var(--white);
     color: var(--grayish-blue);
     padding: 3rem;
-   display: flex;
+   display: none;
     flex-direction: column;
     align-items: center;
     max-width: 400px;
