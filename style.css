@@ -65,23 +65,21 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
- 
 }
 .menu-wrap ul{
     position: absolute;
+    /* display: none; */
     top: 20%;
     right:-999px;
     transition: right 0.5s;
     background-color: var(--white);
     color: var(--grayish-blue);
     padding: 3rem;
-    display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 400px;
     gap: 1.4rem;
     width: 85%;
-    overflow-x: hidden;
 }
 .menu-wrap ul li a:hover{
     color:var(--yellow);
@@ -112,8 +110,7 @@ header{
     height: 100%;
 }
 .menu-wrap.active ul{
-    position: absolute;
-    opacity: 1;
+    display: flex;
     right: 10%;
     z-index: 20;
     transition: right 0.5s;
