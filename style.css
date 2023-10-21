@@ -69,7 +69,6 @@ header{
 
 .menu-wrap ul{
     position: absolute;
-    right: -990px;
     top: 20%;
     transition: right 0.5s;
     background-color: var(--white);
