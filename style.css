@@ -81,6 +81,7 @@ header{
     max-width: 400px;
     gap: 1.4rem;
     width: 85%;
+    overflow-x: hidden;
 }
 .menu-wrap ul li a:hover{
     color:var(--yellow);
