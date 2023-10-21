@@ -23,7 +23,7 @@ body{
     font-weight: 600;
     color:var(--grayish-blue);
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 ul {
     list-style: none;
@@ -66,20 +66,32 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.menu{
+    display: none;
+}
+.menu-wrap.active .menu{
+    display: block;
+}
 .menu-wrap ul{
     position: absolute;
-    /* display: none; */
+    right: -990px;
     top: 20%;
-    right:-999px;
     transition: right 0.5s;
     background-color: var(--white);
     color: var(--grayish-blue);
     padding: 3rem;
+   display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 400px;
     gap: 1.4rem;
     width: 85%;
+}
+.menu-wrap.active ul{
+    display: flex;
+    right: 10%;
+    z-index: 20;
+    transition: right 0.5s;
 }
 .menu-wrap ul li a:hover{
     color:var(--yellow);
@@ -109,12 +121,7 @@ header{
     width: 100%;
     height: 100%;
 }
-.menu-wrap.active ul{
-    display: flex;
-    right: 10%;
-    z-index: 20;
-    transition: right 0.5s;
-}
+
 .menu-wrap.active ul::before{
     width: 30px;
     height:30px;
