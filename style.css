@@ -157,19 +157,16 @@ header{
         top: 0;
         left: 0;
         right: 0;
-        flex-direction: row;
         background-color: transparent;
         width: auto;
         max-width: 100%;
         transform: translateX(0);
-        gap: 0;
+        gap: 2rem;
         display: flex;
-        gap: 1rem;
-        display: flex;
+        flex-direction: row;
         align-items: center;
-        gap:1rem;
         color:var(--white);
-       padding:0;
+        padding:0;
     }
     .hamburger-menu{
         display: none;
