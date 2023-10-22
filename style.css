@@ -15,7 +15,9 @@
 --gayish-blue-2: hsl(210, 4%, 67%);
 --white: hsl(0, 0%, 100%);
 }
-
+html{
+    overflow-x: hidden;
+}
 body{
     max-width: 1440px;
     margin-inline: auto;
@@ -23,7 +25,7 @@ body{
     font-weight: 600;
     color:var(--grayish-blue);
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
 ul {
     list-style: none;
@@ -69,26 +71,22 @@ header{
 
 .menu-wrap ul{
     position: absolute;
-    top: 20%;
-
-    right: -200px;
+    top: 24%;
+    right: -999px;
     transition: right 0.5s;
     background-color: var(--white);
     color: var(--grayish-blue);
     padding: 3rem;
-   display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
-     max-width: 400px;
-    gap: 1.4rem;
+    max-width: 400px;
+    gap: 1.5rem;
     width: 85%;
     z-index: 20;
-
 }
 .menu-wrap.active ul{
-    display: flex;
     right: 10%;
- 
     transition: right 0.5s;
 }
 .menu-wrap ul li a:hover{
